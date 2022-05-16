@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vòng lặp for</title>
+    <title>vòng lặp while</title>
 </head>
 
 <body>
     <script>
-        let number = +prompt("enter your number: ");
-        let total = 0,
-            i = 0;
-        for (; i <= number; i++) {
-            total += i;
-            console.log(i);
+        let i = 1
+        while (i < 100) {
+            if (i >= 0 && i < 100)
+                document.write("<hr width = " + i + "%>");
+            i++;
         }
-        console.log(total);
     </script>
 </body>
 
