@@ -6,24 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bảng 9 chương</title>
+    <!-- <style>
+       
+        tr,td {
+            padding: 20px;
+            heigth
+        }
+    </style> -->
 </head>
 
-<body>
-    <h1>Bảng cửu chương</h1>
-    <script>
-        let sout, i, j;
-        sout = "<table border='1' width='300' cellspacing='0' cellpadding='15'>";
 
-        for (i = 2; i <= 10; i++) {
-            sout = sout + "<tr>";
-            for (j = 2; j <= 10; j++) {
-                sout = sout + "<td>" + j + "*" + i + "=" + i * j + "</td>";
+<body>
+    <h1>Bảng 9 chương</h1>
+
+    <script>
+        document.write('<table border = 1>')
+        for (let i = 2; i <= 10; i++) {
+            document.write('<tr>')
+            for (let j = 1; j < 10; j++) {
+                document.write(`<td style="background-color: ${(j%2==0) ? "aqua" : "red"}">${j} x ${i} = ${i * j} </td>`)
             }
-            sout = sout + "</tr>";
-            // j = 2;
+            document.write('</tr>')
         }
-        sout = sout + "</table>";
-        document.write(sout);
+        document.write('</table>')
     </script>
 </body>
 
