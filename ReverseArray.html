@@ -10,17 +10,27 @@
 
 <body>
     <script>
-        let x = [-3, 5, 1, 3, 2, 10]
-        let first = 0;
-        let second = x.length - 1;
-        while (first < second) {
-            let b = x[first];
-            x[first] = x[second]
-            x[second] = b;
-            first++;
-            second--;
+        // let x = [-3, 5, 1, 3, 2, 10]
+        // let first = 0;
+        // let second = x.length - 1;
+        // while (first < second) {
+        //     let b = x[first];
+        //     x[first] = x[second]
+        //     x[second] = b;
+        //     first++;
+        //     second--;
+        // }
+        // document.write(x);
+
+        //tìm các giá trị trong mảng
+
+        let value = prompt("enter a number: ");
+        let numbers = [-3, 5, 1, 3, 2, 10];
+        for (let i = 0; i < numbers.length; i++) {
+            if (value == numbers[i]) {
+                alert("value" + numbers[i] + "found at" + i);
+            }
         }
-        document.write(x);
     </script>
 </body>
 
