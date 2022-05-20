@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascipt Array Join ,toString</title>
+</head>
+
+<body>
+    <script>
+        //* : Viết một chương trình Javascript để nối tất cả các phần tử trong một mảng chuỗi lại với nhau. Ví dụ có mảng chuỗi như sau: myColor = ["Red", "Green", "White", "Black"];
+
+        // let myColor = ["Red", "Green", "White", "Black"];
+        // console.log(myColor.toString());
+        // console.log(myColor.join());
+        // console.log(myColor.join('+'));
+
+        //*  // chèn dấu - giữa 2 số chẵn
+
+        // var num = window.prompt();
+        // var str = num.toString();
+        // var result = [str[0]];
+        // for (let x = 1; x < str.length; x++) {
+        //     if ((str[x - 1] % 2 === 0) && (str[x] % 2 === 0)) {
+        //         result.push('-', str[x]);
+        //     } else {
+        //         result.push(str[x]);
+
+        //     }
+        // }
+        // console.log(result.join(''));
+
+        //*chuyển chuỗi kí tự từ chữ in thường sang in hoa
+
+        let string = prompt('nhap chu cai;');
+        var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        var result = [];
+
+        for (var x = 0; x < string.length; x++) {
+            if (UPPER.indexOf(string[x]) !== -1) {
+                result.push(string[x].toLowerCase());
+            } else if (LOWER.indexOf(string[x]) !== -1) {
+                result.push(string[x].toUpperCase());
+            } else {
+                result.push(string[x]);
+            }
+        }
+        console.log(result.join(''));
+    </script>
+</body>
+
+
+</html>
